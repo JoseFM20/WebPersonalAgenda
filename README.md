@@ -1,97 +1,130 @@
 # Web Personal Agenda
 
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?style=flat-square)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-Private-red?style=flat-square)]()
+
 Una aplicación web moderna de agenda personal construida con React, que te permite organizar tus eventos, tareas y notas de manera eficiente. Toda la información se almacena localmente en tu navegador mediante IndexedDB.
+
+---
+
+## Contenidos
+
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Inicio Rápido](#inicio-rápido)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Uso](#uso)
+- [Privacidad](#privacidad)
 
 ## Características
 
-- **Vista de Calendario**: Visualiza y gestiona tus eventos de forma intuitiva
-- **Gestor de Tareas**: Organiza y completa tus tareas pendientes
-- **Notas**: Crea y guarda notas importantes
-- **Dashboard**: Panel de control con resumen de tu agenda
-- **Almacenamiento Local**: Toda tu información se guarda en tu navegador (IndexedDB)
-- **Interfaz Moderna**: Diseñada con Tailwind CSS y componentes Radix UI
-- **PWA**: Instalable como aplicación progresiva
+| Característica | Descripción |
+|---|---|
+| **Calendario** | Visualiza y gestiona tus eventos de forma intuitiva |
+| **Gestor de Tareas** | Organiza y completa tus tareas pendientes con prioridades |
+| **Notas** | Crea y guarda notas importantes |
+| **Dashboard** | Panel de control con resumen de tu agenda |
+| **Almacenamiento Local** | Toda tu información se guarda en tu navegador (IndexedDB) |
+| **Interfaz Moderna** | Diseñada con Tailwind CSS y componentes Radix UI |
+| **PWA** | Instalable como aplicación progresiva en tu dispositivo |
 
 ## Tecnologías
 
-- **React 19** - Framework de interfaz de usuario
-- **Vite** - Build tool y servidor de desarrollo
-- **Tailwind CSS 4** - Framework de estilos
-- **Radix UI** - Componentes de interfaz accesibles
-- **IndexedDB** - Base de datos local del navegador
-- **Lucide React** - Iconos
-- **date-fns** - Manejo de fechas
-- **Zod** - Validación de esquemas
-- **React Hook Form** - Gestión de formularios
+| Tecnología | Descripción |
+|---|---|
+| **React 19** | Framework de interfaz de usuario |
+| **Vite** | Build tool y servidor de desarrollo |
+| **Tailwind CSS 4** | Framework de estilos basado en utilidades |
+| **Radix UI** | Componentes de interfaz accesibles |
+| **IndexedDB** | Base de datos local del navegador |
+| **Lucide React** | Iconos modernos |
+| **date-fns** | Manejo de fechas y horas |
+| **Zod** | Validación de esquemas |
+| **React Hook Form** | Gestión de formularios eficiente |
 
 ## Inicio Rápido
 
 ### Prerrequisitos
 
 - Node.js (versión 16 o superior)
-- npm (gestor de paquetes)
+- npm (gestor de paquetes) o pnpm
 
 ### Instalación
 
-1. **Clona el repositorio**
-
 ```bash
+# 1. Clona el repositorio
 git clone https://github.com/JoseFM20/WebPersonalAgenda.git
 cd WebPersonalAgenda
-```
 
-2. **Instala las dependencias**
-
-```bash
+# 2. Instala las dependencias
 npm install
-```
 
-3. **Inicia el servidor de desarrollo**
-
-```bash
+# 3. Inicia el servidor de desarrollo
 npm run dev
 ```
 
-4. **Abre tu navegador**
+Abre tu navegador en `http://localhost:3000`
 
-La aplicación estará disponible en `http://localhost:3000`
+> La aplicación se abrirá automáticamente en tu navegador predeterminado.
 
 ## Scripts Disponibles
 
-```bash
-npm run dev      # Inicia el servidor de desarrollo
-npm run build    # Construye la aplicación para producción
-npm run preview  # Previsualiza la versión de producción
-```
+| Comando | Descripción |
+|---|---|
+| `npm run dev` | Inicia el servidor de desarrollo en puerto 3000 |
+| `npm run build` | Construye la aplicación optimizada para producción |
+| `npm run preview` | Previsualiza la versión de producción localmente |
 
 ## Estructura del Proyecto
 
 ```
-PersonalAgenda2/
-├── public/              # Archivos estáticos
+WebPersonalAgenda/
+├── public/                 # Archivos estáticos
 ├── src/
-│   ├── components/      # Componentes React
-│   │   ├── agenda/     # Componentes de la agenda
-│   │   └── ui/         # Componentes de interfaz reutilizables
-│   ├── hooks/          # React hooks personalizados
-│   ├── lib/            # Utilidades y stores
-│   ├── App.jsx         # Componente principal
-│   ├── db.js           # Configuración de IndexedDB
-│   └── main.jsx        # Punto de entrada
+│   ├── components/         # Componentes React reutilizables
+│   │   ├── agenda/        # Componentes específicos de la agenda
+│   │   │   ├── app-shell.jsx
+│   │   │   ├── calendar-view.jsx
+│   │   │   ├── dashboard-view.jsx
+│   │   │   ├── event-form-dialog.jsx
+│   │   │   ├── notes-view.jsx
+│   │   │   ├── sidebar-nav.jsx
+│   │   │   └── tasks-view.jsx
+│   │   └── ui/             # Componentes base de interfaz
+│   ├── hooks/              # React hooks personalizados
+│   ├── lib/                # Utilidades y stores
+│   │   ├── agenda-store.jsx
+│   │   └── utils.js
+│   ├── App.jsx             # Componente principal
+│   ├── db.js               # Configuración de IndexedDB
+│   └── main.jsx            # Punto de entrada
 ├── package.json
-└── vite.config.js
+├── vite.config.js
+└── README.md
 ```
 
 ## Uso
 
-1. **Eventos**: Crea eventos desde la vista de calendario especificando título, fecha y hora
-2. **Tareas**: Añade tareas con prioridad y fecha de vencimiento
-3. **Notas**: Guarda notas rápidas e ideas importantes
-4. **Dashboard**: Visualiza un resumen de toda tu información
+### Gestión de Eventos
+Crea eventos desde la vista de calendario especificando título, fecha y hora. Los eventos se guardan automáticamente en tu navegador.
+
+### Organizador de Tareas
+Añade tareas con prioridad y fecha de vencimiento. Marca las tareas como completadas según avances.
+
+### Notas Rápidas
+Guarda notas rápidas e ideas importantes de forma segura en tu dispositivo.
+
+### Dashboard
+Visualiza un resumen de toda tu información de un vistazo con el panel de control.
+
+---
 
 ## Privacidad
 
-Todos tus datos se almacenan localmente en tu navegador. No se envía ninguna información a servidores externos.
+> Tu privacidad es importante para nosotros. Todos tus datos se almacenan **localmente en tu navegador**. No se envía ninguna información a servidores externos ni a terceros.
 
 ## Licencia
 
@@ -103,4 +136,4 @@ Las contribuciones son bienvenidas. Por favor, abre un issue primero para discut
 
 ---
 
-Desarrollado usando React y Vite
+Desarrollado con React y Vite | Última actualización: Febrero 2026
