@@ -21,77 +21,29 @@ Una aplicación web moderna de agenda personal construida con React, que te perm
 
 ## Características
 
-<table>
-<tr>
-<td width="25%"><b>Calendario</b></td>
-<td>Visualiza y gestiona tus eventos de forma intuitiva</td>
-</tr>
-<tr>
-<td><b>Gestor de Tareas</b></td>
-<td>Organiza y completa tus tareas pendientes con prioridades</td>
-</tr>
-<tr>
-<td><b>Notas</b></td>
-<td>Crea y guarda notas importantes</td>
-</tr>
-<tr>
-<td><b>Dashboard</b></td>
-<td>Panel de control con resumen de tu agenda</td>
-</tr>
-<tr>
-<td><b>Almacenamiento Local</b></td>
-<td>Toda tu información se guarda en tu navegador (IndexedDB)</td>
-</tr>
-<tr>
-<td><b>Interfaz Moderna</b></td>
-<td>Diseñada con Tailwind CSS y componentes Radix UI</td>
-</tr>
-<tr>
-<td><b>PWA</b></td>
-<td>Instalable como aplicación progresiva en tu dispositivo</td>
-</tr>
-</table>
+| Característica | Descripción |
+|---|---|
+| Calendario | Visualiza y gestiona tus eventos de forma intuitiva |
+| Gestor de Tareas | Organiza y completa tus tareas pendientes con prioridades |
+| Notas | Crea y guarda notas importantes |
+| Dashboard | Panel de control con resumen de tu agenda |
+| Almacenamiento Local | Toda tu información se guarda en tu navegador (IndexedDB) |
+| Interfaz Moderna | Diseñada con Tailwind CSS y componentes Radix UI |
+| PWA | Instalable como aplicación progresiva en tu dispositivo |
 
 ## Tecnologías
 
-<table>
-<tr>
-<td width="25%"><b>React 19</b></td>
-<td>Framework de interfaz de usuario</td>
-</tr>
-<tr>
-<td><b>Vite</b></td>
-<td>Build tool y servidor de desarrollo</td>
-</tr>
-<tr>
-<td><b>Tailwind CSS 4</b></td>
-<td>Framework de estilos basado en utilidades</td>
-</tr>
-<tr>
-<td><b>Radix UI</b></td>
-<td>Componentes de interfaz accesibles</td>
-</tr>
-<tr>
-<td><b>IndexedDB</b></td>
-<td>Base de datos local del navegador</td>
-</tr>
-<tr>
-<td><b>Lucide React</b></td>
-<td>Iconos modernos</td>
-</tr>
-<tr>
-<td><b>date-fns</b></td>
-<td>Manejo de fechas y horas</td>
-</tr>
-<tr>
-<td><b>Zod</b></td>
-<td>Validación de esquemas</td>
-</tr>
-<tr>
-<td><b>React Hook Form</b></td>
-<td>Gestión de formularios eficiente</td>
-</tr>
-</table>
+| Tecnología | Descripción |
+|---|---|
+| React 19 | Framework de interfaz de usuario |
+| Vite | Build tool y servidor de desarrollo |
+| Tailwind CSS 4 | Framework de estilos basado en utilidades |
+| Radix UI | Componentes de interfaz accesibles |
+| IndexedDB | Base de datos local del navegador |
+| Lucide React | Iconos modernos |
+| date-fns | Manejo de fechas y horas |
+| Zod | Validación de esquemas |
+| React Hook Form | Gestión de formularios eficiente |
 
 ## Inicio Rápido
 
@@ -134,20 +86,11 @@ http://localhost:3000
 
 ## Scripts Disponibles
 
-<table>
-<tr>
-<td width="25%"><b>npm run dev</b></td>
-<td>Inicia el servidor de desarrollo en puerto 3000</td>
-</tr>
-<tr>
-<td><b>npm run build</b></td>
-<td>Construye la aplicación optimizada para producción</td>
-</tr>
-<tr>
-<td><b>npm run preview</b></td>
-<td>Previsualiza la versión de producción localmente</td>
-</tr>
-</table>
+| Comando | Descripción |
+|---|---|
+| `npm run dev` | Inicia el servidor de desarrollo en puerto 3000 |
+| `npm run build` | Construye la aplicación optimizada para producción |
+| `npm run preview` | Previsualiza la versión de producción localmente |
 
 ## Estructura del Proyecto
 
